@@ -49,7 +49,7 @@
         NSLog(@"resultPath = %@",resultPath);
         
         AVAssetExportSession *exportSession = [[AVAssetExportSession alloc] initWithAsset:avAsset
-                                                                               presetName:AVAssetExportPresetMediumQuality];
+                                                                               presetName:AVAssetExportPresetHighestQuality];
         exportSession.outputURL = [NSURL fileURLWithPath:resultPath];
         exportSession.outputFileType = AVFileTypeMPEG4;
         exportSession.shouldOptimizeForNetworkUse = YES;
